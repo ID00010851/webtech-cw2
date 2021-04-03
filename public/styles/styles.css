@@ -155,3 +155,7 @@ textarea {
 .dream a:hover {
   color: #F7BE22;
 }
+
+.dream-text {
+  margin: 1rem 0;
+}
