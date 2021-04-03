@@ -11,4 +11,8 @@ block content
     else
       h2 There's no dream added yet!
     a(href="/dreams/add").btn-add Add Dream
+    if success 
+      h3.success Successfully added!
+    if delete_success 
+      h3.success Successfully deleted!
     

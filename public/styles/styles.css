@@ -181,3 +181,15 @@ textarea {
 .delete:hover {
   color: rgb(150, 0, 0);
 }
+
+.error {
+  align-self: center;
+  margin-top: 1rem;
+  color: red;
+}
+
+.success {
+  align-self: center;
+  margin-top: 1rem;
+  color: green;
+}
