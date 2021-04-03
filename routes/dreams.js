@@ -58,6 +58,23 @@ router.get("/:id", (req, res) => {
     });
 });
 
+router.get("/:id/delete", (req, res) => {
+    fs.readFile(database, (err, data) => {
+      if (err) throw err;
+
+      const dreams = JSON.parse(data);
+      const dreamIndex = dreams.findIndex(dream => dream.id == req.body.id);
+      
+      dreams.splice(dreamIndex, 1);
+      
+      fs.writeFile(database, JSON.stringify(dreams), (err) => {
+          if (err) throw err;
+
+          res.render("dreams", { dreams: dreams });
+      });
+    });
+});
+
 function id() {
     return Math.random().toString(36).substr(2, 9);
 }

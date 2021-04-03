@@ -173,3 +173,11 @@ textarea {
     padding: 1rem;
   }
 }
+
+.delete {
+  color: red;
+}
+
+.delete:hover {
+  color: rgb(150, 0, 0);
+}
