@@ -21,7 +21,7 @@ body::before {
   width: 100%;
   background-color: #fff;
   opacity: 0.3;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
@@ -158,4 +158,18 @@ textarea {
 
 .dream-text {
   margin: 1rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  footer, main {
+    width: 90%;
+  }
+
+  main {
+    margin: 3rem 0;
+  }
+
+  .dreams {
+    padding: 1rem;
+  }
 }
