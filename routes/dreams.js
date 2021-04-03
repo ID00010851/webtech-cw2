@@ -14,6 +14,10 @@ router.get("/add", (req, res) => {
     res.render("add-dream");
 });
 
+router.get("/", (req, res) => {
+    res.render("dreams");
+});
+
 router.get("/dreams", (req, res) => {
     fs.readFile(db, (err, data) => {
         if (err) throw err;

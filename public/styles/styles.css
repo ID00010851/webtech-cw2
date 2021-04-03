@@ -140,3 +140,18 @@ textarea {
   padding: 0.5rem 1rem;
   font-family: 'Coiny', cursive;
 }
+
+.dreams {
+  padding: 1rem 5rem;
+}
+
+.dream a {
+  text-decoration: none;
+  color: #262C46;
+  transition: all 0.1s;
+  font-size: larger;
+}
+
+.dream a:hover {
+  color: #F7BE22;
+}
