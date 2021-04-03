@@ -2,11 +2,13 @@ extends layout.pug
 
 block content
   main
-    h2 Dreams Of People
-    ul.dreams
-      li.dream
-        a(href="/dreams/id") Dream 1
-      li.dream
-        a(href="/dreams/id") Dream 2
-      li.dream
-        a(href="/dreams/id") Dream 3
+    if dreams.length
+      h2 Dreams Of People
+      each dream in dreams 
+        ul.dreams
+          li.dream
+            a(href=`/dreams/${dream.id}`)=dream.title
+    else
+      h2 There's no dream added yet!
+    a(href="/dreams/add").btn-add Add Dream
+    

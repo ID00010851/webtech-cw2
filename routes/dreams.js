@@ -25,7 +25,7 @@ router.post("/", (req, res) => {
   const dream = {
     id: id(),
     title: req.body.title,
-    detail: req.body.title
+    detail: req.body.detail
   }
 
   fs.readFile(database, (err, data) => {
