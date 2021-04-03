@@ -47,8 +47,15 @@ router.get("/add", (req, res) => {
     res.render("add-dream");
 });
 
-router.get("/id", (req, res) => {
-    res.render("dream");
+router.get("/:id", (req, res) => {
+    fs.readFile(database, (err, data) => {
+        if (err) throw err;
+
+        const dreams = JSON.parse(data);
+        const dream = dreams.find((dream) => dream.id == req.params.id);
+
+        res.render("dream", { dream: dream });
+    });
 });
 
 function id() {
