@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+  main
+    h2 Add Your Dream
+    form(action="/dreams" method="POST")
+      label(for="title") Title:
+      input(type="text" id="title" name="title")
+      label(for="detail") Description:
+      textarea(name="detail" id="detail")
+      button.btn-add Add +
