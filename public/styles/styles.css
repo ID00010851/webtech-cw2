@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 2rem 3rem;
+  background-image: url("../images/background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Coiny', cursive;
+}
+
+body::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+nav {
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a,
+.btn-add {
+  padding: 1rem 1.5rem;
+  border: 4px solid #fff;
+  border-radius: 2rem;
+  background-color: #262C46;
+  margin: 0 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+nav ul li a:hover {
+  border: 4px solid #262C46;
+  background-color: #fff;
+  color: #262C46;
+}
+
+.btn-add:hover {
+  border: 4px solid #F7BE22;
+  color: #F7BE22;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Lily Script One', cursive;
+  color: #262C46;
+  font-size: 5rem;
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem;
+  background-color: #fff;
+  position: relative;
+  border: 4px solid #262C46;
+}
+
+.btn-add {
+  margin-top: 2rem;
+}
+
+footer {
+  display: flex;
+  width: 70%;
+}
+
+.disclaimer {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262C46;
+  border: 4px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
