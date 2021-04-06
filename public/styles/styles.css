@@ -7,7 +7,9 @@
 body {
   min-height: 100vh;
   padding: 2rem 3rem;
-  background-image: url("../images/background.jpg");
+  background: rgb(38,44,70);
+  background: linear-gradient(258deg, rgba(38,44,70,1) 0%, rgba(42,64,161,1) 100%);
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,7 +22,7 @@ body::before {
   height: 100%;
   width: 100%;
   background-color: #fff;
-  opacity: 0.3;
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -83,6 +85,7 @@ h1 {
 h2 {
   color: #262C46;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .btn-add {
@@ -112,6 +115,7 @@ footer {
 }
 
 main {
+  margin: 3rem 0;
   padding: 2rem;
   width: 70%;
   background-color: #fff;
@@ -143,6 +147,17 @@ textarea {
 
 .dreams {
   padding: 1rem 5rem;
+  list-style: none;
+}
+
+.dream {
+  border: 2px solid #262C46;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.dream:hover {
+  border-color: #F7BE22;
 }
 
 .dream a {
@@ -163,10 +178,6 @@ textarea {
 @media only screen and (max-width: 600px) {
   footer, main {
     width: 90%;
-  }
-
-  main {
-    margin: 3rem 0;
   }
 
   .dreams {
