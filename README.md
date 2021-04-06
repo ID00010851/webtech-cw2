@@ -50,3 +50,8 @@ http://dream-10851.glitch.me/
 You can use the data of database, anmely, all dreams data by sending a request to the url below:
 
 http://dream-10851.glitch.me/api/v1/dreams
+
+
+## Project Folder Structure
+
+The project has been built with a very functional folder tree. Each file types are placed in a relative general directory, such as, routes, views, etc. Main entry point - app.js is in the first layer of the tree. NPM files are present along with documentation. Public folder has all style file.
